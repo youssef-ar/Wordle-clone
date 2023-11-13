@@ -1,0 +1,155 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  
+}
+.header{
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.6rem;
+  background-color: #121212;
+  color: white;
+  border-bottom: 1px solid #3a3a3c;
+}
+
+main{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 91.5vh;
+  font-size: 1.2rem;
+  background-color: #121212;
+  
+}
+.board{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.board div{
+  display: flex;
+}
+.cell{
+  border: 2px solid #3a3a3c;
+  width: 60px;
+  height: 60px;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  font-size: 1.7rem;
+
+}
+.keyboard{
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.keyboard-line{
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.key{
+  background-color: #818384;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+}
+.ENTER, .DELETE{
+  width: 85px;
+}
+.green{
+  background-color: #538d4e;
+}
+.gray{
+  background-color: #3a3a3c;
+}
+.beige{
+  background-color: #b59f3b;
+}
+
+.container{
+  background-color: rgba(245, 245, 220, 0.292);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.frame{
+  background-color: white;
+  width: 50%;
+  height: 50%;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+
+}
+
+.error-container{
+  background-color: rgb(212, 23, 23);
+  position: fixed;
+  top: 60px;
+  right: 43%;
+  
+  height: 50px;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  color: white;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 1.4rem;
+  -webkit-animation: shake .2s ease-in-out .2s infinite alternate;
+  
+}
+
+.playagain-button{
+  background-color: #538d4e;
+  border: none;
+  color: white;
+  width: 100px;
+  height: 50px;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+@-webkit-keyframes shake{
+  from{
+    -webkit-transform: translate(3px);
+  }
+  to{
+    -webkit-transform: translate(-3px);
+    -webkit-transform-origin: center center;
+  }
+}
+
